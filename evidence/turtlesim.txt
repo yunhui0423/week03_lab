@@ -1,0 +1,9 @@
+/talker
+/teleop_turtle
+/turtlesim
+x: 7.055422782897949
+y: 7.496164321899414
+theta: 1.8240000009536743
+linear_velocity: 0.0
+angular_velocity: 0.0
+---

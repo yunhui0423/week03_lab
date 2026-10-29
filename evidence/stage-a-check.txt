@@ -1,0 +1,36 @@
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.1.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+WARNING: The NVIDIA Driver was not detected.  GPU functionality will not be available.
+   Use the NVIDIA Container Toolkit to start this container with GPU support; see
+   https://docs.nvidia.com/datacenter/cloud-native/ .
+
+Thu Oct 29 03:15:15 PM CST 2026
+deb http://ftp.tku.edu.tw/ubuntu/ jammy main restricted universe multiverse
+deb http://ftp.tku.edu.tw/ubuntu/ jammy-updates main restricted universe multiverse
+deb http://ftp.tku.edu.tw/ubuntu/ jammy-security main restricted universe multiverse
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Mon_Apr__3_17:16:06_PDT_2023
+Cuda compilation tools, release 12.1, V12.1.105
+Build cuda_12.1.r12.1/compiler.32688072_0
+Python 3.10.12
+pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)
+git version 2.34.1
+ GNU nano, version 6.2
+ (C) 1999-2011, 2013-2022 Free Software Foundation, Inc.
+ (C) 2014-2022 the contributors to nano
+ Compiled options: --disable-libmagic --enable-utf8
+root

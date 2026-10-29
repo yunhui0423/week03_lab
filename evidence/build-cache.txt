@@ -1,0 +1,70 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 3.35kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/nvidia/cuda:12.1.1-cudnn8-devel-ubuntu22.04
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 65B done
+#3 DONE 0.0s
+
+#4 [ 1/14] FROM docker.io/nvidia/cuda:12.1.1-cudnn8-devel-ubuntu22.04@sha256:21196d81f56b48dbee70494d5f10322e1a77cc47ffe202a3bf68eab81533c20f
+#4 resolve docker.io/nvidia/cuda:12.1.1-cudnn8-devel-ubuntu22.04@sha256:21196d81f56b48dbee70494d5f10322e1a77cc47ffe202a3bf68eab81533c20f 0.0s done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 92B done
+#5 DONE 0.0s
+
+#6 [ 4/14] RUN apt-get update     && apt-get install -y --no-install-recommends         sudo git nano         python3 python3-pip python3-venv         build-essential curl ca-certificates         locales tzdata bash-completion         mesa-utils libgl1-mesa-dri     && rm -rf /var/lib/apt/lists/*
+#6 CACHED
+
+#7 [ 3/14] RUN ln -snf /usr/share/zoneinfo/Asia/Taipei /etc/localtime     && echo Asia/Taipei > /etc/timezone
+#7 CACHED
+
+#8 [ 9/14] COPY ros_env.sh /etc/ros_env.sh
+#8 CACHED
+
+#9 [ 2/14] RUN printf "deb http://ftp.tku.edu.tw/ubuntu/ %s main restricted universe multiverse\n"         jammy jammy-updates jammy-security         > /etc/apt/sources.list
+#9 CACHED
+
+#10 [13/14] RUN rosdep update     && mkdir -p ~/ros2_ws/src     && echo 'source /etc/ros_env.sh' >> ~/.bashrc
+#10 CACHED
+
+#11 [ 7/14] RUN apt-get update     && apt-get install -y --no-install-recommends         ros-humble-moveit         ros-humble-moveit-resources-panda-moveit-config         ros-humble-ros2-control         ros-humble-ros2-controllers     && rm -rf /var/lib/apt/lists/*
+#11 CACHED
+
+#12 [ 5/14] RUN locale-gen en_US.UTF-8     && update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+#12 CACHED
+
+#13 [ 8/14] RUN (getent group 1000         || groupadd --gid 1000 student)     && useradd --uid 1000 --gid 1000         -m -s /bin/bash student     && echo "student ALL=(ALL) NOPASSWD:ALL"         > /etc/sudoers.d/student     && chmod 0440 /etc/sudoers.d/student
+#13 CACHED
+
+#14 [ 6/14] RUN V="1.2.0"     && GH=https://github.com/ros-infrastructure/ros-apt-source     && DEB=ros2-apt-source_${V}.jammy_all.deb     && curl -fsSL --retry 3 -o /tmp/${DEB}         ${GH}/releases/download/${V}/${DEB}     && dpkg -i /tmp/${DEB} && rm /tmp/${DEB}     && apt-get update     && apt-get install -y --no-install-recommends         ros-humble-desktop ros-dev-tools     && rosdep init     && rm -rf /var/lib/apt/lists/*
+#14 CACHED
+
+#15 [12/14] RUN chmod 0755 /entrypoint.sh /usr/local/bin/week03-check
+#15 CACHED
+
+#16 [10/14] COPY entrypoint.sh /entrypoint.sh
+#16 CACHED
+
+#17 [11/14] COPY check.sh /usr/local/bin/week03-check
+#17 CACHED
+
+#18 [14/14] WORKDIR /home/student/ros2_ws
+#18 CACHED
+
+#19 exporting to image
+#19 exporting layers done
+#19 exporting manifest sha256:f07425608cba2b2dc208a2ae8930c1e62779d59b462f015e4090568eba313654 done
+#19 exporting config sha256:5e75305588749696addab32e6cea28c4a34a72fe8e21496ad95b4a831d592643 done
+#19 exporting attestation manifest sha256:9065a6e0fd395a151ed75be671771f31086156d34c40a8b9cb6a9e5a6016125c 0.0s done
+#19 exporting manifest list sha256:d50d414aa010da7781936bb591aa3d63b3c8ca52c8cd659241ae4aea9ff93181 0.0s done
+#19 naming to docker.io/library/motor-control:week03 done
+#19 unpacking to docker.io/library/motor-control:week03 0.0s done
+#19 DONE 0.1s
+[build.sh] 完成：motor-control:week03（ROS 來源 1.2.0）

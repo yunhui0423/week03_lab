@@ -1,0 +1,49 @@
+A message was lost!!!
+	total count change:1
+	total count: 1---
+header:
+  stamp:
+    sec: 1793259466
+    nanosec: 519422027
+  frame_id: base_link
+name:
+- panda_finger_joint1
+- panda_joint1
+- panda_joint2
+- panda_finger_joint2
+- panda_joint3
+- panda_joint4
+- panda_joint5
+- panda_joint6
+- panda_joint7
+position:
+- 0.0
+- 0.1670365634288991
+- -0.45870246282841154
+- 0.0
+- -0.03302848422920126
+- -2.0998710333988315
+- -0.569672279927126
+- 1.002679150422145
+- 0.7759137296168518
+velocity:
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+effort:
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+- .nan
+---

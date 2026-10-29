@@ -1,0 +1,28 @@
+== 系統 ==
+  [OK]   Ubuntu 22.04
+  [OK]   時區 Asia/Taipei
+  [OK]   apt 來源 ftp.tku.edu.tw
+  [OK]   sudo 免密碼
+== 工具 ==
+  [OK]   python3 / pip
+  [OK]   git / nano
+== CUDA / cuDNN ==
+  [OK]   nvcc（CUDA 12.1）
+  [OK]   libcudnn8 / libcudnn8-dev
+  [OK]   載入 libcudnn.so.8
+== ROS 2 / MoveIt ==
+  [OK]   rclpy
+  [OK]   turtlesim
+  [OK]   rviz2
+  [OK]   moveit_ros_move_group
+  [OK]   moveit_setup_assistant
+  [OK]   moveit_resources_panda_moveit_config
+  [OK]   controller_manager
+== 資訊 ==
+  使用者：student（UID 1000）  時間：2026-10-29 15:29:45 CST
+  Cuda compilation tools, release 12.1, V12.1.105
+  cuDNN 版本： 8900
+  （CPU 模式：容器內看不到 GPU，屬正常）
+  ROS_DISTRO=humble  ROS_DOMAIN_ID=30  ROS_LOCALHOST_ONLY=1
+
+全部通過。GPU 計算、ROS 通訊與 GUI 請依講義另外測試。

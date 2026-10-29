@@ -1,0 +1,6 @@
+.git
+ros2_ws
+*.log
+*.tar
+
+evidence/
